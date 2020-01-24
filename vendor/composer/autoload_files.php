@@ -16,5 +16,6 @@ return array(
     '253c157292f75eb38082b5acb06f3f01' => $vendorDir . '/nikic/fast-route/src/functions.php',
     '3917c79c5052b270641b5a200963dbc2' => $vendorDir . '/kint-php/kint/init.php',
     '06806f2c15f7f516b0654214053609d9' => $vendorDir . '/mnapoli/php-di/src/functions.php',
-    'a5bca607de696bdad3b70e585584f6c5' => $baseDir . '/app/helpers.php',
+    'b33e3d135e5d9e47d845c576147bda89' => $vendorDir . '/php-di/php-di/src/functions.php',
+    '4da4b56c972b8b36676203ee708b1f3f' => $baseDir . '/App/helpers.php',
 );

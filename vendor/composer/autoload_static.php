@@ -17,7 +17,8 @@ class ComposerStaticInit51ee765ae47c17ffb66dd917cd9d4a19
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '3917c79c5052b270641b5a200963dbc2' => __DIR__ . '/..' . '/kint-php/kint/init.php',
         '06806f2c15f7f516b0654214053609d9' => __DIR__ . '/..' . '/mnapoli/php-di/src/functions.php',
-        'a5bca607de696bdad3b70e585584f6c5' => __DIR__ . '/../..' . '/app/helpers.php',
+        'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
+        '4da4b56c972b8b36676203ee708b1f3f' => __DIR__ . '/../..' . '/App/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -67,6 +68,7 @@ class ComposerStaticInit51ee765ae47c17ffb66dd917cd9d4a19
         array (
             'Fig\\Http\\Message\\' => 17,
             'FastRoute\\' => 10,
+            'Faker\\' => 6,
         ),
         'D' => 
         array (
@@ -206,6 +208,10 @@ class ComposerStaticInit51ee765ae47c17ffb66dd917cd9d4a19
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
+        'Faker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
+        ),
         'Doctrine\\Persistence\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Persistence',
@@ -252,6 +258,7 @@ class ComposerStaticInit51ee765ae47c17ffb66dd917cd9d4a19
         'DI\\' => 
         array (
             0 => __DIR__ . '/..' . '/mnapoli/php-di/src',
+            1 => __DIR__ . '/..' . '/php-di/php-di/src',
         ),
         'Cake\\Utility\\' => 
         array (
@@ -291,7 +298,7 @@ class ComposerStaticInit51ee765ae47c17ffb66dd917cd9d4a19
         ),
         'Application\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app',
+            0 => __DIR__ . '/../..' . '/App',
         ),
     );
 

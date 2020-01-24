@@ -32,6 +32,7 @@ return array(
     'Invoker\\' => array($vendorDir . '/php-di/invoker/src'),
     'Fig\\Http\\Message\\' => array($vendorDir . '/fig/http-message-util/src'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
+    'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
     'Doctrine\\Persistence\\' => array($vendorDir . '/doctrine/persistence/lib/Doctrine/Persistence'),
     'Doctrine\\ORM\\' => array($vendorDir . '/doctrine/orm/lib/Doctrine/ORM'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
@@ -42,7 +43,7 @@ return array(
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
     'Doctrine\\Common\\Annotations\\' => array($vendorDir . '/doctrine/annotations/lib/Doctrine/Common/Annotations'),
     'Doctrine\\Common\\' => array($vendorDir . '/doctrine/common/lib/Doctrine/Common', $vendorDir . '/doctrine/event-manager/lib/Doctrine/Common', $vendorDir . '/doctrine/persistence/lib/Doctrine/Common', $vendorDir . '/doctrine/reflection/lib/Doctrine/Common'),
-    'DI\\' => array($vendorDir . '/mnapoli/php-di/src'),
+    'DI\\' => array($vendorDir . '/mnapoli/php-di/src', $vendorDir . '/php-di/php-di/src'),
     'Cake\\Utility\\' => array($vendorDir . '/cakephp/utility'),
     'Cake\\Log\\' => array($vendorDir . '/cakephp/log'),
     'Cake\\Datasource\\' => array($vendorDir . '/cakephp/datasource'),
@@ -52,5 +53,5 @@ return array(
     'Cake\\Cache\\' => array($vendorDir . '/cakephp/cache'),
     'Aura\\Session\\_Config\\' => array($vendorDir . '/aura/session/config'),
     'Aura\\Session\\' => array($vendorDir . '/aura/session/src'),
-    'Application\\' => array($baseDir . '/app'),
+    'Application\\' => array($baseDir . '/App'),
 );
