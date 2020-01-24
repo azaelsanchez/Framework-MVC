@@ -1,7 +1,33 @@
 <?php
 
-$container = require __DIR__ . '/components/bootstrap/container.php';
+$container = require __DIR__ . '/../bootstrap/container.php';
 $dispacher = require base_path('routes/web.php');
+
+//Guardamos en una variable el método Http utilizado en cada request:
+$httpMethod= $_SERVER['REQUEST_METHOD'];
+
+//Convertimos la url del request en un array para poder crear las rutas:
+$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+
+$route= $dispacher->dispatch($httpMethod, $uri);
+
+
 
 Kint::dump($container);
 Kint::dump($dispacher);
+
+switch ($route[0]) {
+    case FastRoute\Dispatcher::NOT_FOUND:
+        echo ('<h2>Ruta no encontrada</h2>');
+        break;
+    case FastRoute\Dispatcher::METHOD_NOT_ALLOWED:
+        echo ('<h2>Método Http no permitido</h2>');
+        break;
+    case FastRoute\Dispatcher::FOUND:
+        $controller = $route[1];
+        $params = $route[2];
+        $container->call($controller, $params);
+        break;
+}
+
+Kint::dump($route);
